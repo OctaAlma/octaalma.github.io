@@ -1,0 +1,76 @@
+/*
+Icons obtained from: https://www.flaticon.com/icon-fonts-most-downloaded
+*/
+
+/* Color palette:
+- Main background: #211f20
+- Navbar: #2a2a2a
+- Navbar elements (hovered): #333333
+- Font color: #ececec
+
+- accent: #007AFF
+- seleced-accent: #2094FA
+*/
+
+body{
+    background-color: #211f20;
+    color: #ececec;
+    font-family: 'roboto';
+    margin: 0;
+}
+
+.navbarCont{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #2a2a2a;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navItem{
+    text-align: center;
+
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+
+    transition-duration: 0.5s;
+}
+
+.navItem:hover{
+    /* letter-spacing: 0.02rem; */
+    background-color: #333333;
+}
+
+.navLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navItem img{
+    position: relative;
+    translate: 0 0.12rem;
+
+    max-height: 1rem;
+    padding-right: 0.2rem;
+
+    /* weird color stuff... */ 
+    filter: drop-shadow(0px 1000px 0 #ececec);
+    transform: translateY(-1000px);
+}
+
+#selected{
+    color: #2094FA;
+}
+
+#selected img{
+    /* weird color stuff... */
+    filter: drop-shadow(0px 1000px 0 #2094FA);
+    transform: translateY(-1000px);
+}
