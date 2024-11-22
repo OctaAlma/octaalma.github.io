@@ -25,31 +25,134 @@
                 <!-- Name/Home | About Me | Projects | Personal -->
                 <a href="./index.html" class="navLink">
                     <div class="navItem">
-                            <img src="./resources/icons/house-chimney.png" alt="Home i">
+                            <img class="icon" src="./resources/icons/house-chimney.png" alt="Home i">
                             Octavio Almanza
                     </div>
                 </a>
                 <a href="./about.html" class="navLink">
                     <div class="navItem">
-                            <img src="./resources/icons/info.png" alt="Home i">
+                            <img class="icon" src="./resources/icons/info.png" alt="Home i">
                             About
                     </div>
                 </a>
                 <a href="./projects.html" class="navLink" id="selected">
                     <div class="navItem">
-                            <img src="./resources/icons/tools.png" alt="Home i">
+                            <img class="icon" src="./resources/icons/tools.png" alt="Home i">
                             Projects
                     </div>
                 </a>
                 <a href="./personal.html" class="navLink">
                     <div class="navItem">
-                            <img src="./resources/icons/user.png" alt="Home i">
+                            <img class="icon" src="./resources/icons/user.png" alt="Home i">
                             Personal
                     </div>
                 </a>
             </nav>
         </div>
         
+        <div class="pageContent">
+
+            <div class="projectContainer">
+                <div class="projectInfo">
+                    <div class="projectTitle">
+                        <h2 class="projectName">Dynamic Graph Visualizer</h2>
+                        <hr class="rounded">
+                        <p>
+                            In the summer of 2023, I was contacted by <a class="txtLink" href="https://veldt.engr.tamu.edu/">Dr. Nate Veldt</a>, my professor for <b><em>CSCE 411: The Design and Analysis of Algorithms</em></b>.
+                            He was reaching out to see if I would be interested in working with him on a research project for the coming year, specifically a graph algorithm visualizer tool to create animations for lectures and presentations.
+                            Dr. Veldt was an incredible professor when I had him for 411, and I was onboard the <em>second</em> I received his email.
+                            <br><br>
+                            
+                            As it turned out, <a class="txtLink" href="https://www.linkedin.com/in/nicholus-campbell/">Nicholus Campbell</a>, one of my closest colleagues at TAMU had contacted Dr. Veldt and agreed to work with him on a hyper-graph visualizer.
+                            Because of this, Nick and I were able to work very closely during our first semester as student researchers, and were able to tackle the several challenges with creating a project from scratch using a language and framework previously unknown to us.
+                            By far the most difficult part of the project was getting used to the <a class="txtLink" href="https://julialang.org/">Julia language</a>, and the <a class="txtLink" href="https://docs.juliaplots.org/stable/">Plots.jl</a> package. 
+                            There were many things to get used to and limited time to get used to them.
+                            <br><br>
+
+                            The project ended up working quite well, but there are several issues that I would fix if I could start over again. Particularly:
+                            <ul>
+                                <li>We were unable to create a generalized function to draw directed graphs.</li>
+                                <li>It is <b>very</b> tedious to display interface components. <em>The algorithm that you see on right is Dijkstra's algorithm, and the array at the bottom displays a priority queue of node IDs based on their shortest path estimate at a point in time. The box and dividers between the numbers are individual lines drawn at calculated intervals</em> 😵‍💫.</li>
+                            </ul>
+
+                        </p>
+                    </div>    
+                </div>
+
+                <div class="projectLinks" style="text-align: center;">
+                    <img class="projectImg" src="./resources/project_imgs/dgv/dijkstra.gif" alt="A screenshot of GL-Asteroids, showcasing a spaceship in the middle, and multi-colored asteroids surrounding the ship.">
+                    <a href="https://github.com/OctaAlma/Dynamic-Graph-Viz">
+                        <div class="link">
+                            <img class="icon" src="./resources/icons/github.png" alt="GitHub icon">
+                            Project GitHub page
+                        </div>
+                    </a>
+                    <a href="./resources/projects/Dynamic-Graph-Viz-main.zip">
+                        <div class="link">
+                            <img class="icon" src="./resources/icons/file-zipper.png" alt="Zip file icon">
+                            Download source code
+                        </div>
+                    </a>
+                    <a href="https://oaktrust.library.tamu.edu/items/29141865-6618-4652-a367-341a781bfa6d">
+                        <div class="link">
+                            <img class="icon" src="./resources/icons/file-pdf.png" alt="PDF file icon">
+                            Check out my URS Thesis
+                        </div>
+                    </a>     
+                </div>
+            </div>
+        
+            <div class="projectContainer">
+                <div class="projectInfo">
+                    <div class="projectTitle">
+                        <h2 class="projectName">GL-Asteroids</h2>
+                        <hr class="rounded">
+                        <p>
+                            This project was my final assignment for <b><em>CSCE 450: Computer Animation</em></b>, which was taught by <a class="txtLink" href="https://people.engr.tamu.edu/sueda/index.html">Dr. Shinjiro Sueda</a>. 
+                            I decided to take the honors version of the course in order to fulfill my "<em>high-impact experience</em>" graduation requirement.
+                            The only difference between the normal and the Honors course was one extra requirement: 
+                            the final project had to incorporate some animation concept that "<em>went beyond what was covered in the course</em>."
+                            <br><br>
+
+                            The first topic that we covered was <a class="txtLink" href="https://www.studiobinder.com/blog/what-are-keyframes-in-animation/">keyframing</a>, which is a technique in which a 3D model transitions between
+                            two different positions and rotations in space over time. I decided to expand upon this idea by using "<em><b>dynamic keyframing</b></em>,"
+                            which would essentially be predetermined keyframes that would vary in position and duration based on the ship's speed, position, 
+                            and direction over time. 
+                            <br><br>
+
+                            The Gameplay is very simple. Users can maneuver the ship with the <a class="keys">WASD</a> keys and can shoot a laser beam by pressing the <a class="keys">J</a> key. 
+                            The ship can also perform maneuvers, such as a starfox-style "<em>barrel-roll</em>" in the left or right directions using the <a class="keys">Q</a> and <a class="keys">E</a> keys, respectively. 
+                            Users can also do a sommersault move by pressing the <a class="keys">SPACEBAR</a> key.
+                            <br><br>
+
+                            The goal of the game is to destroy all of the asteroids on the map. 
+                            Whenever an asteroid intersects a laser beam, the asteroid will either split into two smaller asteroids, or explode. 
+                            The project also features particle effects, and they can be seen with the spaceship's exhaust trail and asteroid explosions.
+                            <br><br>
+                            Although this project took a little too much time, I received <a href="https://people.engr.tamu.edu/sueda/courses/CSCE450/2023F/projects/index.html" class="txtLink">second place</a> in the class.
+                        </p>
+                    </div>    
+                </div>
+
+                <div class="projectLinks" style="text-align: center;">
+                    <img class="projectImg" src="./resources/project_imgs/gl-asteroids/game.png" alt="A screenshot of GL-Asteroids, showcasing a spaceship in the middle, and multi-colored asteroids surrounding the ship.">
+                    <a href="https://github.com/OctaAlma/450_Final_GL-Asteroids">
+                        <div class="link">
+                            <img class="icon" src="./resources/icons/github.png" alt="GitHub icon">
+                            Project GitHub page
+                        </div>
+                    </a>
+                    <a href="./resources/projects/450_Final_GL-Asteroids-main.zip">
+                        <div class="link">
+                            <img class="icon" src="./resources/icons/file-zipper.png" alt="Zip file icon">
+                            Download source code
+                        </div>
+                    </a>                    
+                </div>
+            </div>
+
+
+        </div>
 
         <script src="" async defer></script>
     </body>

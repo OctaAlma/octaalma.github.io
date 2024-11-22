@@ -10,6 +10,9 @@ Icons obtained from: https://www.flaticon.com/icon-fonts-most-downloaded
 
 - accent: #007AFF
 - seleced-accent: #2094FA
+
+- nice green: #24a833
+- link purple: #7d7aff
 */
 
 body{
@@ -44,7 +47,6 @@ nav{
 }
 
 .navItem:hover{
-    /* letter-spacing: 0.02rem; */
     background-color: #333333;
 }
 
@@ -57,12 +59,15 @@ nav{
     position: relative;
     translate: 0 0.12rem;
 
-    max-height: 1rem;
     padding-right: 0.2rem;
+}
 
+.icon{
+    max-height: 1rem;
+    
     /* weird color stuff... */ 
-    filter: drop-shadow(0px 1000px 0 #ececec);
-    transform: translateY(-1000px);
+    filter: drop-shadow(0px 100000px 0 #ececec);
+    transform: translateY(-100000px);
 }
 
 #selected{
@@ -71,6 +76,141 @@ nav{
 
 #selected img{
     /* weird color stuff... */
-    filter: drop-shadow(0px 1000px 0 #2094FA);
-    transform: translateY(-1000px);
+    filter: drop-shadow(0px 100000px 0 #2094FA);
+    transform: translateY(-100000px);
+}
+
+.pageContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin-top: 1.5rem;
+    line-height: 1.75rem;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.codeText{
+    font-family: 'source code pro';
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: larger;
+}
+
+hr.rounded {
+    color: #2094FA;
+    border: 0.1rem solid #2094FA;
+    
+    border-radius: 0.1rem;
+    
+}
+
+/* for the projects page */
+
+.txtLink{
+    color: #7d7aff;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    border-radius: 0.2rem;
+}
+
+.txtLink:visited{
+    color: #7d7aff;
+}
+
+.txtLink:hover{
+    color: #211f20;
+    background-color: #7d7aff;
+}
+
+
+.mainHeader{
+    color: #2094FA;
+    font-family: 'source code pro';
+    text-align: center;
+}
+
+.projectContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1500px) {
+    .projectContainer{
+        flex-wrap: wrap;
+    }
+}
+
+.projectImg{
+    min-width: 80%;
+    width: 27.5rem;
+
+    border-radius: 0.5rem;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 1.5rem
+}
+
+.projectInfo{
+    padding: 2rem;
+}
+
+.projectName{
+    font-family: 'source code pro';
+}
+
+.projectLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+    color: #7d7aff;
+    border-radius: 0.5rem;
+    transition-duration: 0.3s;
+}
+
+.link img{
+    filter: drop-shadow(0px 100000px 0 #7d7aff);
+    transform: translateY(-100000px);
+
+    position: relative;
+    translate: 0 0.12rem;
+
+    padding-right: 0.2rem;
+}
+
+.link:hover{
+    color: #211f20;
+    background-color: #7d7aff;
+}
+
+.link:hover img{
+    filter: drop-shadow(0px 100000px 0 #211f20);
+    transform: translateY(-100000px);
+}
+
+.keys{
+    background-color: #333333;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    font-family: 'source code pro';
 }
