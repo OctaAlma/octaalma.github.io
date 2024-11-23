@@ -15,8 +15,19 @@ Icons obtained from: https://www.flaticon.com/icon-fonts-most-downloaded
 - link purple: #7d7aff
 */
 
+:root{
+    --content-width: 1200px;
+    --accent-color: #2094FA;
+    --background-color: #211f20;
+    --font-color: #ececec;
+    --nav-color: #2a2a2a;
+    --link-color: #7d7aff;
+}
+
+/* html, body {width: auto!important; overflow-x: hidden!important}  */
+
 body{
-    background-color: #211f20;
+    background-color: var(--background-color);
     color: #ececec;
     font-family: 'roboto';
     margin: 0;
@@ -26,10 +37,11 @@ body{
     position: sticky;
     top: 0;
     overflow: hidden;
+    width: 100%;
 }
 
 nav{
-    background-color: #2a2a2a;
+    background-color: var(--nav-color);
 
     display: flex;
     flex-direction: row;
@@ -59,11 +71,14 @@ nav{
     position: relative;
     translate: 0 0.12rem;
 
+    padding-left: 0.2rem;
     padding-right: 0.2rem;
 }
 
 .icon{
     max-height: 1rem;
+
+    z-index: 1;
     
     /* weird color stuff... */ 
     filter: drop-shadow(0px 100000px 0 #ececec);
@@ -71,12 +86,12 @@ nav{
 }
 
 #selected{
-    color: #2094FA;
+    color: var(--accent-color);
 }
 
 #selected img{
     /* weird color stuff... */
-    filter: drop-shadow(0px 100000px 0 #2094FA);
+    filter: drop-shadow(0px 100000px 0 var(--accent-color));
     transform: translateY(-100000px);
 }
 
@@ -86,10 +101,15 @@ nav{
     flex-direction: column;
     
     margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     line-height: 1.75rem;
 
-    margin-left: 10%;
-    margin-right: 10%;
+    width: var(--content-width);
 }
 
 .codeText{
@@ -104,18 +124,21 @@ nav{
     font-size: larger;
 }
 
+#leftIntro{
+    line-height:normal;
+}
+
 hr.rounded {
-    color: #2094FA;
-    border: 0.1rem solid #2094FA;
+    color: var(--accent-color);
+    border: 0.1rem solid var(--accent-color);
     
     border-radius: 0.1rem;
-    
 }
 
 /* for the projects page */
 
 .txtLink{
-    color: #7d7aff;
+    color: var(--link-color);
     font-weight: bold;
     text-decoration: none;
     transition-duration: 0.2s;
@@ -123,17 +146,17 @@ hr.rounded {
 }
 
 .txtLink:visited{
-    color: #7d7aff;
+    color: var(--link-color);
 }
 
 .txtLink:hover{
-    color: #211f20;
-    background-color: #7d7aff;
+    color: var(--background-color);
+    background-color: var(--link-color);
 }
 
 
 .mainHeader{
-    color: #2094FA;
+    color: var(--accent-color);
     font-family: 'source code pro';
     text-align: center;
 }
@@ -142,12 +165,6 @@ hr.rounded {
     display:flex;
     flex-direction: row;
     justify-content: center;
-}
-
-@media only screen and (max-width: 1500px) {
-    .projectContainer{
-        flex-wrap: wrap;
-    }
 }
 
 .projectImg{
@@ -160,11 +177,7 @@ hr.rounded {
     margin: 1.5rem
 }
 
-.projectInfo{
-    padding: 2rem;
-}
-
-.projectName{
+.sectionName{
     font-family: 'source code pro';
 }
 
@@ -183,13 +196,13 @@ hr.rounded {
     padding-right: 0.5rem;
     margin-bottom: 0.5rem;
     
-    color: #7d7aff;
+    color: var(--link-color);
     border-radius: 0.5rem;
     transition-duration: 0.3s;
 }
 
 .link img{
-    filter: drop-shadow(0px 100000px 0 #7d7aff);
+    filter: drop-shadow(0px 100000px 0 var(--link-color));
     transform: translateY(-100000px);
 
     position: relative;
@@ -199,12 +212,12 @@ hr.rounded {
 }
 
 .link:hover{
-    color: #211f20;
-    background-color: #7d7aff;
+    color: var(--background-color);
+    background-color: var(--link-color);
 }
 
 .link:hover img{
-    filter: drop-shadow(0px 100000px 0 #211f20);
+    filter: drop-shadow(0px 100000px 0 var(--background-color));
     transform: translateY(-100000px);
 }
 
@@ -213,4 +226,112 @@ hr.rounded {
     padding: 0.2rem;
     border-radius: 0.3rem;
     font-family: 'source code pro';
+}
+
+
+/* miscellaneous */
+
+
+/* for the favorite album gallery: */
+
+.albumGallery{
+    font-family: 'roboto';
+    text-align: center;
+    justify-content: center;
+
+    line-height: normal;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.musicLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+.albumItem{
+    margin: 0.5rem;
+
+    text-align: center;
+    max-width: 12rem;
+
+    border-radius: 1rem;
+    transition-duration: 0.4s;
+}
+
+.albumItem:hover{
+    background-color: #ececec;
+}
+
+.albumName{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+
+    transition-duration: 0.4s;
+}
+
+.albumItem:hover .albumName{
+    color:var(--background-color);
+}
+
+.albumArtist{
+    font-family: 'source code pro';
+
+    padding: 0.2rem;
+    transition-duration: 0.4s;
+}
+
+.albumItem:hover .albumArtist{
+    color:var(--nav-color);
+}
+
+.albumCover{
+    width: 10rem;
+    margin: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.albumName{
+    color: white;
+}
+
+@media only screen and (max-width: 1500px) {
+    .projectContainer{
+        flex-wrap: wrap;    
+    }
+    
+    .pageContent{
+        width: 90%;
+    }
+
+    .projectImg{
+        max-width: 90%;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    /* make album covers more compact */
+    .albumItem{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .albumCover{
+        max-width: 9rem;
+
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+    .albumName{
+        max-width: 8rem;
+    }
+    .albumArtist{
+        max-width: 8rem;
+    }
 }
