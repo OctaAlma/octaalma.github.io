@@ -16,19 +16,27 @@ Icons obtained from: https://www.flaticon.com/icon-fonts-most-downloaded
 */
 
 :root{
+    --std-font: 'roboto';
+    --navbar-font: 'nunito';
+    --code-font: 'source code pro';
+    
     --content-width: 1200px;
+    
     --accent-color: #2094FA;
     --background-color: #211f20;
     --font-color: #ececec;
     --nav-color: #2a2a2a;
+    --nav-hover-color: #333333;
     --link-color: #7d7aff;
+    --tamu-color: #500000;
+    --green-color: #24a833;
 }
 
 /* html, body {width: auto!important; overflow-x: hidden!important}  */
 
 body{
     background-color: var(--background-color);
-    color: #ececec;
+    color: var(--font-color);
     font-family: 'roboto';
     margin: 0;
 }
@@ -49,6 +57,9 @@ nav{
 }
 
 .navItem{
+    font-family: var(--navbar-font);
+    font-weight: 550;
+
     text-align: center;
 
     padding: 1rem;
@@ -59,7 +70,7 @@ nav{
 }
 
 .navItem:hover{
-    background-color: #333333;
+    background-color: var(--nav-hover-color);
 }
 
 .navLink{
@@ -75,13 +86,21 @@ nav{
     padding-right: 0.2rem;
 }
 
+.navIcon{
+    max-height: 1rem;
+     
+    /* weird color stuff... */ 
+    filter: drop-shadow(0px 100000px 0 var(--font-color));
+    transform: translateY(-100000px);
+}
+
 .icon{
     max-height: 1rem;
 
-    z-index: 1;
+    z-index: -1;
     
     /* weird color stuff... */ 
-    filter: drop-shadow(0px 100000px 0 #ececec);
+    filter: drop-shadow(0px 100000px 0 var(--font-color));
     transform: translateY(-100000px);
 }
 
@@ -135,14 +154,15 @@ hr.rounded {
     border-radius: 0.1rem;
 }
 
-/* for the projects page */
-
 .txtLink{
     color: var(--link-color);
     font-weight: bold;
     text-decoration: none;
     transition-duration: 0.2s;
     border-radius: 0.2rem;
+
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
 }
 
 .txtLink:visited{
@@ -157,7 +177,7 @@ hr.rounded {
 
 .mainHeader{
     color: var(--accent-color);
-    font-family: 'source code pro';
+    font-family: var(--code-font);
     text-align: center;
 }
 
@@ -165,6 +185,9 @@ hr.rounded {
     display:flex;
     flex-direction: row;
     justify-content: center;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .projectImg{
@@ -178,7 +201,8 @@ hr.rounded {
 }
 
 .sectionName{
-    font-family: 'source code pro';
+    font-family: var(--code-font);
+    line-height: normal;
 }
 
 .projectLinks{
@@ -222,14 +246,92 @@ hr.rounded {
 }
 
 .keys{
-    background-color: #333333;
+    background-color: var(--nav-hover-color);
     padding: 0.2rem;
     border-radius: 0.3rem;
-    font-family: 'source code pro';
+    font-family: var(--code-font);
 }
 
 
-/* miscellaneous */
+.bulletList{
+    margin-top: 0;
+    padding-left: 1rem;
+    margin-top: 0;
+    list-style-type: square;
+}
+
+/* for the setup section */
+
+.sectionDivider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subsectionDivider{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.section{
+    max-width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 0;
+}
+
+.smallSection, .leftSection, .rightSection{
+    max-width: 100%;
+    width: 30rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 0;
+}
+
+.componentList{
+    padding-left: 1rem;
+}
+
+.component{
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 0.3rem;
+
+    color: white;
+}
+
+.spec{
+    font-style: italic;
+
+    color: var(--green-color);
+    display: inline-block;
+}
+
+.sectionImg{
+    align-self: center;
+
+    max-width: 80%;
+    width: 28rem;
+
+    max-height: 100%;
+    height: auto;
+
+    border-radius: 0.5rem;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 1.5rem;
+}
 
 
 /* for the favorite album gallery: */
@@ -262,7 +364,7 @@ hr.rounded {
 }
 
 .albumItem:hover{
-    background-color: #ececec;
+    background-color: var(--font-color);
 }
 
 .albumName{
@@ -277,7 +379,7 @@ hr.rounded {
 }
 
 .albumArtist{
-    font-family: 'source code pro';
+    font-family: var(--code-font);
 
     padding: 0.2rem;
     transition-duration: 0.4s;
@@ -298,6 +400,19 @@ hr.rounded {
 
 .albumName{
     color: white;
+}
+
+/* special treatment*/
+#tamu{
+    padding: 0.1rem;    
+
+    background-color: var(--tamu-color);
+    color: var(--font-color);
+}
+
+#tamu:hover{
+    background-color: var(--font-color);
+    color: var(--tamu-color);
 }
 
 @media only screen and (max-width: 1500px) {
@@ -334,4 +449,192 @@ hr.rounded {
     .albumArtist{
         max-width: 8rem;
     }
+
+    .invertedSection{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+/**/
+
+.imgGallery{
+    position: relative;    /* Establish a containing block for the absolute element */
+    display: inline-block; /* To make width fit to the content */
+}
+
+.leftArrow, .rightArrow{
+    /*makes the arrows invisible until hover*/
+    opacity: 0;
+    transition-duration: 0.3s;
+
+    /* this is so that it can overlap the image*/
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    /* allows the arrow to float in the middle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgGallery:hover .leftArrow, .imgGallery:hover .rightArrow{
+    background-color: rgba(0.2, 0.2, 0.2, 0.25);
+    opacity: 1;
+}
+
+.leftArrow:hover, .rightArrow:hover{
+    
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 1;
+}
+
+.leftArrow{
+    /* border-radius: top-left | top-right | bottom-right | bottom-left */
+    left: 0;
+}
+
+.rightArrow{
+    right: 0;
+}
+
+/* article stuff */
+
+.articleLink{
+    text-align: center;
+}
+
+.articleTitle{
+
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+
+
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--link-color);
+
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    transition-duration: 0.3s;
+
+}
+
+.articleTitle:hover{
+    background-color: var(--link-color);
+    color: var(--font-color);
+    transform: translate(0, -0.25rem);
+    text-underline-offset: 0.5rem;
+}
+
+.contentSpacer{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+/* The following CSS is for the contact form */
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#formShortTextInput{
+    max-width: fit-content;
+}
+
+.formEntry{
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: flex-end;
+    align-content: start;
+}
+
+.shortTextInput{
+    font-family: var(--code-font);
+
+    width: 12rem;
+
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    border: none;
+}
+
+.userMessage{
+    font-family: var(--code-font);
+
+    border: none;
+
+    width: 100%;
+    height: 7rem;
+
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    
+    border-radius: 0.5rem;
+}
+
+.submitButton{
+    width: min-content;
+    align-self: center;
+
+    display: flex;
+
+    font-family: var(--navbar-font);
+    font-weight: 550;
+
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+
+    transition-duration: 0.3s;
+
+    border: none;
+}
+
+.submitButton:hover{
+    background-color: var(--nav-hover-color);
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.submitIcon{
+    translate: 0 0.15rem;
+    max-height: 1rem;
+    margin-right: 0.5rem;
+    font-family: var(--navbar-font);
+}
+
+.submitButton:hover .submitIcon{
+    filter: drop-shadow(0px 100000px 0 var(--font-color));
+    transform: translateY(-100000px);
+}
+
+/* The following CSS is for the footer section */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerIcon{
+    max-height: 1.5rem;
+     
+    /* weird color stuff... */ 
+    filter: drop-shadow(0px 100000px 0 var(--font-color));
+    transform: translateY(-100000px);
 }

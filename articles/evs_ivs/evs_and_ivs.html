@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="./resources/pokemon_stuff.css">
+
+        <link rel="icon" type="image/x-icon" href="/resources/icons/favicon.png">
+
+        <!-- For Nunito font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+        <!-- For Roboto font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- for the source code pro font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbarCont">
+            <nav class="navbar">
+                <!-- Name/Home | About Me | Projects | Personal -->
+                <a href="/index.html" class="navLink">
+                    <div class="navItem">
+                            <img class="navIcon" src="/resources/icons/house-chimney.png" alt="Home i">
+                            Home
+                    </div>
+                </a>
+                <a href="/about.html" class="navLink">
+                    <div class="navItem">
+                            <img class="navIcon" src="/resources/icons/info.png" alt="Home i">
+                            About
+                    </div>
+                </a>
+                <a href="/projects.html" class="navLink">
+                    <div class="navItem">
+                            <img class="navIcon" src="/resources/icons/tools.png" alt="Home i">
+                            Projects
+                    </div>
+                </a>
+                <a href="/personal.html" class="navLink">
+                    <div class="navItem">
+                            <img class="navIcon" src="/resources/icons/user.png" alt="Home i">
+                            Personal
+                    </div>
+                </a>
+            </nav>
+        </div>
+
+        <div class="pageContent">
+
+            <div class="section">
+                <h1 class="sectionName">Pokemon individual values and effort values, explained</h1>
+                <hr class="rounded" style="width: 100%;">
+
+                <p>
+                    Pokemon is the highest-grossing media frachise in the world, and it needs no introduction.
+                    The mainline series Pokemon games have had several core multiplayer mechanics since their inception, and amongst the most important of these is battling Pokemon with other players.
+                    Pokemon battles have been a staple of the franchise ever since generation 1 (Pokemon Red, Blue, and Yellow), and players have always looked for ways to make their Pokemon stronger.
+                </p>
+
+                <p>
+                    Starting from generation 3 (Pokemon Ruby, Sapphire, and Emerald), every single mainline series Pokemon game has maintained the same system for individualizing Pokemon by their stats: <strong>indvidual values (IVs)</strong> and <strong>effort values (EVs)</strong>.
+                    EVs and IVs are completely different aspects of a Pokemon. The classic analogy is to compare IVs to an individual Pokemon's "genetics" and EVs to  physical training.
+                    We'll go over IVs first, as they are usually the more complicated of the two to understand :)
+                </p>
+
+                <h2>Let's talk stats</h2>
+
+                <p>
+                    One of the main characteristics of Pokemon is their stats. Every Pokemon has the following 6 stats:  
+                </p>
+
+                <ul>
+                    <li><strong>HP</strong> - the number of hit points the Pokemon has</li>
+                    <li><strong>Attack</strong> - How much damage the Pokemon can do from Physical Attacks</li>
+                    <li><strong>Defense</strong> - How much the Pokemon can defend against Physical Attacks</li>
+                    <li><strong>Special Attack</strong> - How much damage the Pokemon can do with Special Attacks</li>
+                    <li><strong>Special Defense</strong> - How much the pokemon can defend against Special Attacks</li>
+                    <li><strong>Speed</strong> - Determines which Pokemon goes first in a given turn</li>
+                </ul>
+
+                <p>
+                    Each species of Pokemon has what is known as a <strong>base stats</strong> which are the stats that the species will have at level 50, prior to applying the effects of nature, IVs, or EVs.
+                    Note that we use level 50 as most Pokemon Videogame Championship (VGC) Tournaments cap the levels to 50.
+                    For example, the Pokemon Quagsire has the following base stats:
+                </p>
+
+                <table class='statTable'>
+                    <tbody>
+                        <tr class='statHeaders statRow'>
+                            <th class="statHeader">Stat</th>
+                            <th class="statHeader">Value</th>
+                        </tr>
+                        <tr class='statRow hp'>
+                            <td class='statLabel'>
+                                HP
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'><strong class="statVal">95</strong></span>
+                                <meter class='statBar hpBar' min='0' max='255' value='95'></meter>
+                            </td>
+                        </tr>
+                        <tr class='statRow atk'>
+                            <td class='statLabel'>
+                                Attack
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'><strong class="statVal">85</strong></span>
+                                <meter class='statBar atkBar' min='0' max='255' value='85'></meter>
+                        </td>
+                        </tr>
+                        <tr class='statRow def'>
+                            <td class='statLabel'>
+                                Defense
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'><strong class="statVal">85</strong></span>
+                                <meter class='statBar defBar' min='0' max='255' value='85'></meter>
+                            </td>
+                        </tr>
+                        <tr class='statRow spAtk'>
+                            <td class='statLabel'>
+                                Sp. Attack
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'><strong class="statVal">65</strong></span>
+                                <meter class='statBar spAtkBar' min='0' max='255' value='65'></meter>
+                            </td>
+                        </tr>
+                        <tr class='statRow'>
+                            <td class='statLabel'>
+                                Sp. Defense
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'><strong class="statVal">65</strong></span>
+                                <meter class='statBar spDefBar' min='0' max='255' value='65'></meter>
+                            </td>
+                        </tr>
+                        <tr class='statRow spd'>
+                            <td class='statLabel'>
+                                Speed
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'><strong class="statVal">35</strong></span>
+                                <meter class='statBar spdBar' min='0' max='255' value='35'></meter>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    These base stats often tell us a lot about what the Pokemon will particularly excel at, and these stats are what we aim to manipulate through the use of EVs and IVs.
+                    For example, in Quagsire's case, his attack base stat is better than his special attack base stat, so we would likely want to maximize his attack stat rather than his special attack.
+                    With this in mind, we will start by taking a look at IVs and how they affect a Pokemon's base stats.
+                </p>
+
+                <h2>Individual Values (IVs)</h2>
+
+                <p>
+                    <strong>The key idea is this: </strong><em>A Pokemon's IVs are set when it is caught or hatched from an egg</em>, and, as of generation 9 (Pokemon Scarlet and Violet), there is <strong>no way to change IVs in-game</strong>.
+                    Each Pokemon has a total of 6 IV values, one for each stat. 
+                    Each IV value can range from 0-31. <strong>The specific IV value for a given stat dictates the additional number of points that will go into that stat when the Pokemon reaches level 100</strong>.
+                    If we want to know how many stat points a specific IV is adding onto our Pokemon's base stat, we can simply:
+                </p>
+
+                <ol>
+                    <li>Divide 100 by your Pokemon's level, round down if a decimal results from calculation (e.g., Quagsire is Level 50, so 100/50 = 2)</li>
+                    <li>Divide the Pokemon's IV value by the number calculated in (1).</li>
+                </ol>
+
+                <p>
+                    <strong>Practice:</strong> Let's suppose that our Quagsire has the following IV values:
+                </p>
+
+                <ul>
+                    <li><strong>HP</strong>: 22</li>
+                    <li><strong>Attack</strong>: 31</li>
+                    <li><strong>Defense</strong>: 20</li>
+                    <li><strong>Special Attack</strong>: 6</li>
+                    <li><strong>Special Defense</strong>: 18</li>
+                    <li><strong>Speed</strong>: 26</li>
+                </ul>
+
+                <p>
+                    This will mean that once our Quagsire reaches level 50, he will have the following stats:
+                </p>
+
+                <table class='statTable'>
+                    <tbody>
+                        <tr class='statHeaders statRow'>
+                            <th class="statHeader">Stat</th>
+                            <th class="statHeader">Value</th>
+                        </tr>
+                        <tr class='statRow hp'>
+                            <td class='statLabel'>
+                                HP
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'>95+22/2=<strong class="statVal">106</strong></span>
+                                <meter class='statBar hpBar' min='0' max='255' value='106'></meter>
+                            </td>
+                        </tr>
+                        <tr class='statRow atk'>
+                            <td class='statLabel'>
+                                Attack
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'>85+31/2=<strong class="statVal">100</strong></span>
+                                <meter class='statBar atkBar' min='0' max='255' value='100'></meter>
+                        </td>
+                        </tr>
+                        <tr class='statRow def'>
+                            <td class='statLabel'>
+                                Defense
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'>85+20/2=<strong class="statVal">95</strong></span>
+                                <meter class='statBar defBar' min='0' max='255' value='95'></meter>
+                            </td>
+                        </tr>
+                        <tr class='statRow spAtk'>
+                            <td class='statLabel'>
+                                Sp. Attack
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'>65+6/2=<strong class="statVal">68</strong></span>
+                                <meter class='statBar spAtkBar' min='0' max='255' value='68'></meter>
+                            </td>
+                        </tr>
+                        <tr class='statRow'>
+                            <td class='statLabel'>
+                                Sp. Defense
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'> 65+18/2=<strong class="statVal">74</strong></span>
+                                <meter class='statBar spDefBar' min='0' max='255' value='74'></meter>
+                            </td>
+                        </tr>
+                        <tr class='statRow spd'>
+                            <td class='statLabel'>
+                                Speed
+                            </td>
+                            <td class='statData'>
+                                <span class='statNum'>35+26/2=<strong class="statVal">48</strong></span>
+                                <meter class='statBar spdBar' min='0' max='255' value='48'></meter>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    That's basically all there is to IVs when it comes to their effects on a Pokemon's stats.
+                    Here's the fun part though: there is no legitimate way to know a pokemon's exact IVs in-game.
+                    
+                    Also, doing some basic math, we find that the chances of finding a Pokemon with perfect IVs in the wild is <strong>1 in 31<sup>6</sup> = 887,503,681</strong>. 
+                    <br>...that ain't happening bro.<br><br>
+                    
+                    Back in generations 3, 4 and 5, you had to use some <a class="txtLink" href="http://www.serebii.net/games/iv-calcdp.shtml">IV calculator</a> by inputting the Pokemon's stats and the EVs that they have gained (which could at least be "tracked" back then).
+                    However because the developers are not monsters, they slowly began adding more help for people who are looking to get Pokemon with good IVs.
+                    Ever since generation 3, there have been some NPCs known as <a class="txtLink" href="https://bulbapedia.bulbagarden.net/wiki/Stats_judge">stats judges</a> that would provide you with an estimate of where a specific Pokemon's IVs landed on.
+                </p>
+
+                <h2>Effort Values (EVs)</h2>
+                <p>
+                    I personally find EVs to be slightly simpler that IVs.
+
+                    Every Pokemon can hold up to 510 "EV points." 
+                    EV points can go into any of the six stats, with a maximum of 252 EV points per stat.
+                    Every four EV points in a particular stat equate to an extra stat point when the Pokemon reaches level 50.
+                    This means that if we were to max out the EVs for a specific stat, we would be able to get 252/4 = <strong>63 more stat points</strong> on that particular stat!
+                    <br><br>
+                    So that sounds cool, but how do we actually get EVs to individual stats?
+                    <strong>The main gist is this</strong>: <em>whenever your Pokemon defeats or participates in the defeat of an opponent Pokemon, they will earn EV points equivalent to the defeated Pokemon's "<strong>EV yield</strong></em>." 
+                    An opponent Pokemon's EV yield is the number of EV points that it will "reward" after being defeated.
+                    Certain species of Pokemon only yield one EV point to some stat, while other can yield 3 total EV points!
+                    Most Pokemon's EV yields target one stat, but some species yield EV points to multiple stats.
+                    The only way to know the EV yield of a particular species is by Googling it (or via very time-consuming and tedious experimentation...)
+                    <br><br>
+                    <strong>Practice</strong>: The EV yield for a Zigzagoon is 1 speed EV point. This means that if Quagsire were to defeat 252 Zigzagoons, Quag will get 252 speed EV points, which equates to 63 more stat points for his speed!
+                    <br><br>
+                    <strong>Practice</strong>: The EV yield for a Rayquaza is 2 Attack and 1 Special Attack EV points. If Quagsire were to defeat 126 Rayquazas, Quag will have 252 attack EVs and 126 special attack EV points, which equates to 63 and 36 more attack and special attack stat points, respectively!
+                    <br><br>
+                    The issue here is that defeating 126 Rayquazas is not a very viable strategy for farming EV points, as there is <em>usually</em> only one Rayquaza per save file.
+                    Because of this, EV training often involves killing a common Pokemon that yields a high amount of EV points to a particular stat.
+                    There are also several shortcuts to get more EV points after defeating a foe.
+                    One of the most important ones are the Power items, which are a collection of bracelets that, when held by a Pokemon, will add 8 EV points to a particular stat after a foe is defeated.
+                    <table class="tableGeneral">
+                        <thead>
+                            <tr class="tableHeaderRow">
+                                <th class="tableItem">Item</th>
+                                <th class="tableItem">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tableRow">
+                                <td class="tableItem">
+                                    <img class="itemIcon" src="./resources/poweranklet.png" alt="Picture of the power anklet">
+                                    <strong>Power Anklet</strong>
+                                </td>
+                                <td class="spdBg tableItem">+8 Speed EVs</td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td class="tableItem">
+                                    <img class="itemIcon" src="./resources/powerband.png" alt="Picture of the power anklet">
+                                    <strong>Power Band</strong>
+                                </td>
+                                <td class="spDefBg tableItem">+8 Special Defense EVs</td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td class="tableItem">
+                                    <img class="itemIcon" src="./resources/powerbelt.png" alt="Picture of the power anklet">
+                                    <strong>Power Belt</strong>
+                                </td>
+                                <td class="defBg tableItem">+8 Defense EVs</td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td class="tableItem">
+                                    <img class="itemIcon" src="./resources/powerbracer.png" alt="Picture of the power anklet">
+                                    <strong>Power Bracer</strong>
+                                </td>
+                                <td class="atkBg tableItem">+8 Attack EVs</td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td class="tableItem">
+                                    <img class="itemIcon" src="./resources/powerlens.png" alt="Picture of the power anklet">
+                                    <strong>Power Lens</strong>
+                                </td>
+                                <td class="spAtkBg tableItem">+8 Special Attack EVs</td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td class="tableItem">
+                                    <img class="itemIcon" src="./resources/powerweight.png" alt="Picture of the power anklet">
+                                    <strong>Power Weight</strong>
+                                </td>
+                                <td class="hpBg tableItem">+8 HP EVs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>

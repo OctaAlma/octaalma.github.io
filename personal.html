@@ -7,7 +7,14 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="/style.css">
+
+        <link rel="icon" type="image/x-icon" href="/resources/icons/favicon.png">
+
+        <!-- For Nunito font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
         <!-- For Roboto font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,27 +30,27 @@
         <div class="navbarCont">
             <nav class="navbar">
                 <!-- Name/Home | About Me | Projects | Personal -->
-                <a href="./index.html" class="navLink">
+                <a href="/index.html" class="navLink">
                     <div class="navItem">
-                            <img class="icon" src="./resources/icons/house-chimney.png" alt="Home i">
+                            <img class="navIcon" src="/resources/icons/house-chimney.png" alt="Home i">
                             Home
                     </div>
                 </a>
-                <a href="./about.html" class="navLink">
+                <a href="/about.html" class="navLink">
                     <div class="navItem">
-                            <img class="icon" src="./resources/icons/info.png" alt="Home i">
+                            <img class="navIcon" src="/resources/icons/info.png" alt="Home i">
                             About
                     </div>
                 </a>
-                <a href="./projects.html" class="navLink">
+                <a href="/projects.html" class="navLink">
                     <div class="navItem">
-                            <img class="icon" src="./resources/icons/tools.png" alt="Home i">
+                            <img class="navIcon" src="/resources/icons/tools.png" alt="Home i">
                             Projects
                     </div>
                 </a>
-                <a href="./personal.html" class="navLink" id="selected">
+                <a href="/personal.html" class="navLink" id="selected">
                     <div class="navItem">
-                            <img class="icon" src="./resources/icons/user.png" alt="Home i">
+                            <img class="navIcon" src="/resources/icons/user.png" alt="Home i">
                             Personal
                     </div>
                 </a>
@@ -64,13 +71,72 @@
         <div class="pageContent">
 
             <div class="pageSection">
-                <h2 class="sectionName">Favorite Albums</h2>
-                <hr class="rounded" style="width: 100%">
 
+                <div class="sectionDivider">
+                    <div class="leftSection">
+                        <h2 class="sectionName">Setup</h2>
+                        <hr class="rounded" style="width: 100%;">
+                        
+                        <div class="subsectionDivider">
+
+                            <div class="subsection">
+                                <h3>Dell XPS 9500 Laptop</h3>
+                                <ul class="componentList">
+                                    <li><div class="component">CPU:</div><div class="spec">Core i9 10885H CPU</div></li>
+                                    <li><div class="component">GPU:</div><div class="spec">NVIDIA GeForce GTX 1650Ti</div></li>
+                                    <li><div class="component">Memory:</div><div class="spec">32GB @ 2933 MT/s</div></li>
+                                    <li><div class="component">Display:</div><div class="spec">15" 4K touchscreen</div></li>
+                                </ul>
+                            </div>
+
+                            <p>
+                                <b>Fun fact:</b> <em>I originally purchased an XPS 9500 with a 1080p screen, Core i7, and 8GB of RAM.
+                                However, I had several issues with my unit and Dell hooked me up with this upgraded one!</em>
+                            </p>
+
+                            <div class="subsection">
+                                <h3>Accessories</h3>
+                                <ul class="componentList">
+                                    <li><div class="component">2<sup>nd</sup> display: </div><div class="spec">27" Acer Nitro Monitor</div></li>
+                                    <li><div class="component">Headphones: </div><div class="spec">Sennheiser HD 58X Jubilee</div></li>
+                                    <li><div class="component">Keyboard: </div><div class="spec">Epomaker EP75</div></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rightSection">
+                        <img src="/resources/camera_pics/setup.jpg" class="sectionImg" alt="A picture of the Pokemon Quagsire using the setup described">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pageSection">
+                <div class="sectionDivider">
+                    <div class="smallSection">
+                        <h2 class="sectionName">Articles</h2>
+                        <hr class="rounded" style="width: 100%;">
+                        <div class="contentSpacer">
+                            <div class="articleLink">
+                                <a class="articleTitle" href="/articles/evs_ivs/evs_and_ivs.html">Pokemon individual values and effort values, explained</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pageSection">
+
+                <div style='padding: 1rem;'>
+                    <h2 class="sectionName">Favorite Albums</h2>
+                    <hr class="rounded" style="width: 100%;">
+                </div>
+                
                 <div class="albumGallery">
                     <a class="musicLink" href="https://open.spotify.com/album/4Uv86qWpGTxf7fU7lG5X6F">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/tcd.webp" alt='Album cover for "The College Dropout" by Kanye West'>
+                            <img class="albumCover" src="/resources/album_covers/tcd.webp" alt='Album cover for "The College Dropout" by Kanye West'>
                             <div class="albumName"><b>The College Dropout</b></div>
                             <div class="albumArtist"><em>Kanye West</em></div>
                             <br>
@@ -79,7 +145,7 @@
                     
                     <a class="musicLink" href="https://open.spotify.com/album/20r762YmB5HeofjMCiPMLv">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/mbdtf.webp" alt='Album cover for "My Beautiful Dark Twisted Fantasy" by Kanye West'>
+                            <img class="albumCover" src="/resources/album_covers/mbdtf.webp" alt='Album cover for "My Beautiful Dark Twisted Fantasy" by Kanye West'>
                             <div class="albumName"><b>My Beautiful Dark Twisted Fantasy</b></div>
                             <div class="albumArtist"><em>Kanye West</em></div>
                             <br>
@@ -88,7 +154,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/4m2880jivSbbyEGAKfITCa?si=c74246983323490f">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/ram.webp" alt='Album cover for "Random Access Memories" by Daft Punk'>
+                            <img class="albumCover" src="/resources/album_covers/ram.webp" alt='Album cover for "Random Access Memories" by Daft Punk'>
                             <div class="albumName"><b>Random Access Memories</b></div>
                             <div class="albumArtist"><em>Daft Punk</em></div>
                             <br>
@@ -97,7 +163,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/7GoZNNb7Yl74fpk8Z6I2cv?si=605481e1a62e4f5c">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/444.webp" alt='Album cover for "4:44" by Jay-Z'>
+                            <img class="albumCover" src="/resources/album_covers/444.webp" alt='Album cover for "4:44" by Jay-Z'>
                             <div class="albumName"><b>4:44</b></div>
                             <div class="albumArtist"><em>Jay-Z</em></div>
                             <br>
@@ -106,7 +172,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/78iX7tMceN0FsnmabAtlOC?si=79f19138177f4c56">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/aeom.webp" alt='Album cover for "All Eyez on Me" by 2Pac'>
+                            <img class="albumCover" src="/resources/album_covers/aeom.webp" alt='Album cover for "All Eyez on Me" by 2Pac'>
                             <div class="albumName"><b>All Eyez on Me</b></div>
                             <div class="albumArtist"><em>2Pac</em></div>
                             <br>
@@ -115,7 +181,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/2UuvBxV56QWWj2uviGS0up?si=aa08cc61bc944bc3">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/be.webp" alt='Album cover for "Be" by Common'>
+                            <img class="albumCover" src="/resources/album_covers/be.webp" alt='Album cover for "Be" by Common'>
                             <div class="albumName"><b>Be</b></div>
                             <div class="albumArtist"><em>Common</em></div>
                             <br>
@@ -124,7 +190,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/69CmkikTHkGKdkrUZTtyWl?si=6fb98ef15c0945f4">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/blueprint.webp" alt='Album cover for "The Blueprint" by Jay-Z'>
+                            <img class="albumCover" src="/resources/album_covers/blueprint.webp" alt='Album cover for "The Blueprint" by Jay-Z'>
                             <div class="albumName"><b>The Blueprint</b></div>
                             <div class="albumArtist"><em>Jay-Z</em></div>
                             <br>
@@ -133,7 +199,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/5gK2l2LgWY0BA4p9uy27z6?si=d9e03b6c65214d87">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/bobs.webp" alt='Album cover for "Black on Both Sides" by Mos Def'>
+                            <img class="albumCover" src="/resources/album_covers/bobs.webp" alt='Album cover for "Black on Both Sides" by Mos Def'>
                             <div class="albumName"><b>Black on Both Sides</b></div>
                             <div class="albumArtist"><em>Mos Def</em></div>
                             <br>
@@ -142,7 +208,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/6DlSUW5gmq6Byc3osKDJ2p?si=6eecd4596fd64a80">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/cant-buy-thrill.webp" alt="Album cover for &quot;Can't Buy a Thrill&quot; by Steely Dan">
+                            <img class="albumCover" src="/resources/album_covers/cant-buy-thrill.webp" alt="Album cover for &quot;Can't Buy a Thrill&quot; by Steely Dan">
                             <div class="albumName"><b>Can't Buy a Thrill</b></div>
                             <div class="albumArtist"><em>Steely Dan</em></div>
                             <br>
@@ -151,7 +217,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/0lmQ6rAGcChLjGXM52Qu3i?si=1f1efaafb9764862">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/day-races.webp" alt='Album cover for "A Day at the Races" by Queen'>
+                            <img class="albumCover" src="/resources/album_covers/day-races.webp" alt='Album cover for "A Day at the Races" by Queen'>
                             <div class="albumName"><b>A Day at the Races</b></div>
                             <div class="albumArtist"><em>Queen</em></div>
                             <br>
@@ -160,16 +226,25 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/3zVyMAtWiXugudXuCRiUjL?si=b00367123a454e48">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/doors.webp" alt='Album cover for "The Doors" by The Doors'>
+                            <img class="albumCover" src="/resources/album_covers/doors.webp" alt='Album cover for "The Doors" by The Doors'>
                             <div class="albumName"><b>The Doors</b></div>
                             <div class="albumArtist"><em>The Doors</em></div>
                             <br>
                         </div>
                     </a>
 
+                    <a class="musicLink" href="https://open.spotify.com/album/6clqMga4PMBcBlWCR6idis?si=6d2dcfce27504411">
+                        <div class="albumItem">
+                            <img class="albumCover" src="/resources/album_covers/burt.webp" alt='Album cover for "La La cagaste... Burt Lancaster" by Hombres G'>
+                            <div class="albumName"><b>La cagaste... Burt Lancaster</b></div>
+                            <div class="albumArtist"><em>Hombres G</em></div>
+                            <br>
+                        </div>
+                    </a>
+
                     <a class="musicLink" href="https://open.spotify.com/album/0Oq3mWfexhsjUh0aNNBB5u?si=f48415d7b8fa47a6">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/gkmc.webp" alt='Album cover for "good kid, m.A.A.d. city" by Kendrick Lamar'>
+                            <img class="albumCover" src="/resources/album_covers/gkmc.webp" alt='Album cover for "good kid, m.A.A.d. city" by Kendrick Lamar'>
                             <div class="albumName"><b>good kid, m.A.A.d. city</b></div>
                             <div class="albumArtist"><em>Kendrick Lamar</em></div>
                             <br>
@@ -178,7 +253,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/4SZko61aMnmgvNhfhgTuD3?si=6df24b4b002447a1">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/graduation.webp" alt='Album cover for "Graduation" by Kanye West'>
+                            <img class="albumCover" src="/resources/album_covers/graduation.webp" alt='Album cover for "Graduation" by Kanye West'>
                             <div class="albumName"><b>Graduation</b></div>
                             <div class="albumArtist"><em>Kanye West</em></div>
                             <br>
@@ -187,7 +262,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE?si=f50c199317d24bef">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/igor.webp" alt='Album cover for "Igor" by Tyler, The Creator'>
+                            <img class="albumCover" src="/resources/album_covers/igor.webp" alt='Album cover for "Igor" by Tyler, The Creator'>
                             <div class="albumName"><b>Igor</b></div>
                             <div class="albumArtist"><em>Tyler, The Creator</em></div>
                             <br>
@@ -196,7 +271,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/3kEtdS2pH6hKcMU9Wioob1?si=0fe319acb2714422">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/illmatic.webp" alt='Album cover for "Illmatic" by Nas'>
+                            <img class="albumCover" src="/resources/album_covers/illmatic.webp" alt='Album cover for "Illmatic" by Nas'>
                             <div class="albumName"><b>Illmatic</b></div>
                             <div class="albumArtist"><em>Nas</em></div>
                             <br>
@@ -205,7 +280,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/6pwuKxMUkNg673KETsXPUV?si=b369a1a4e9fe4c15">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/ksg.webp" alt='Album cover for "KIDS SEE GHOSTS" by Kids See Ghosts'>
+                            <img class="albumCover" src="/resources/album_covers/ksg.webp" alt='Album cover for "KIDS SEE GHOSTS" by Kids See Ghosts'>
                             <div class="albumName"><b>KIDS SEE GHOSTS</b></div>
                             <div class="albumArtist"><em>Kids See Ghosts</em></div>
                             <br>
@@ -214,7 +289,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/7dRdaGSxgcBdJnrOviQRuB?si=35782572ed6d4f2a">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/lad.webp" alt='Album cover for "Life After Death" by Notorious B.I.G.'>
+                            <img class="albumCover" src="/resources/album_covers/lad.webp" alt='Album cover for "Life After Death" by Notorious B.I.G.'>
                             <div class="albumName"><b>Life After Death</b></div>
                             <div class="albumArtist"><em>Notorious B.I.G.</em></div>
                             <br>
@@ -223,7 +298,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/5ll74bqtkcXlKE7wwkMq4g?si=357dfc62d44a4477">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/late-reg.webp" alt='Album cover for "Late Registration" by Kanye West'>
+                            <img class="albumCover" src="/resources/album_covers/late-reg.webp" alt='Album cover for "Late Registration" by Kanye West'>
                             <div class="albumName"><b>Late Registration</b></div>
                             <div class="albumArtist"><em>Kanye West</em></div>
                             <br>
@@ -232,7 +307,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/1p12OAWwudgMqfMzjMvl2a?si=693ae987d96d4847">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/low-end-theory.webp" alt='Album cover for "The Low End Theory" by A Tribe Called Quest'>
+                            <img class="albumCover" src="/resources/album_covers/low-end-theory.webp" alt='Album cover for "The Low End Theory" by A Tribe Called Quest'>
                             <div class="albumName"><b>The Low End Theory</b></div>
                             <div class="albumArtist"><em>A Tribe Called Quest</em></div>
                             <br>
@@ -241,7 +316,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?si=d5ad5db29a7044cf">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/madvillainy.webp" alt='Album cover for "Madvillainy" by Madvillain'>
+                            <img class="albumCover" src="/resources/album_covers/madvillainy.webp" alt='Album cover for "Madvillainy" by Madvillain'>
                             <div class="albumName"><b>Madvillainy</b></div>
                             <div class="albumArtist"><em>Madvillain</em></div>
                             <br>
@@ -250,7 +325,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/1BZoqf8Zje5nGdwZhOjAtD?si=407a0a5c712c4f61">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/miseducation.webp" alt='Album cover for "The Miseducation of Lauryn Hill" by Lauryn Hill'>
+                            <img class="albumCover" src="/resources/album_covers/miseducation.webp" alt='Album cover for "The Miseducation of Lauryn Hill" by Lauryn Hill'>
                             <div class="albumName"><b>The Miseducation of Lauryn Hill</b></div>
                             <div class="albumArtist"><em>Lauryn Hill</em></div>
                             <br>
@@ -259,7 +334,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/4q1HNSka8CzuLvC8ydcsD2?si=d644dd3f82634aaa">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/mothership.webp" alt='Album cover for "Mothership Connection" by Parliament'>
+                            <img class="albumCover" src="/resources/album_covers/mothership.webp" alt='Album cover for "Mothership Connection" by Parliament'>
                             <div class="albumName"><b>Mothership Connection</b></div>
                             <div class="albumArtist"><em>Parliament</em></div>
                             <br>
@@ -268,7 +343,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/1OQ5l5rHKqUumPpn559zJC?si=a4960c655afd4c48">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/my-life.webp" alt='Album cover for "My Life" by Mary J. Blige'>
+                            <img class="albumCover" src="/resources/album_covers/my-life.webp" alt='Album cover for "My Life" by Mary J. Blige'>
                             <div class="albumName"><b>My Life</b></div>
                             <div class="albumArtist"><em>Mary J. Blige</em></div>
                             <br>
@@ -277,7 +352,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/1GbtB4zTqAsyfZEsm1RZfx?si=909c3817a9894583">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/night-opera.webp" alt='Album cover for "A Night at the Opera" by Queen'>
+                            <img class="albumCover" src="/resources/album_covers/night-opera.webp" alt='Album cover for "A Night at the Opera" by Queen'>
                             <div class="albumName"><b>A Night at the Opera</b></div>
                             <div class="albumArtist"><em>Queen</em></div>
                             <br>
@@ -286,7 +361,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/4NNq2vwTapv4fSJcrZbPH7?si=c356bde0ded94d6e">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/old-dog.webp" alt='Album cover for "This Old Dog" by Mac DeMarco'>
+                            <img class="albumCover" src="/resources/album_covers/old-dog.webp" alt='Album cover for "This Old Dog" by Mac DeMarco'>
                             <div class="albumName"><b>This Old Dog</b></div>
                             <div class="albumArtist"><em>Mac DeMarco</em></div>
                             <br>
@@ -295,7 +370,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/2umoqwMrmjBBPeaqgYu6J9?si=5a3376574be0494d">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/purple-rain.webp" alt='Album cover for "Purple Rain" by Prince'>
+                            <img class="albumCover" src="/resources/album_covers/purple-rain.webp" alt='Album cover for "Purple Rain" by Prince'>
                             <div class="albumName"><b>Purple Rain</b></div>
                             <div class="albumArtist"><em>Prince</em></div>
                             <br>
@@ -304,7 +379,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/3IILMjMMnoN2sKzgesX8KV?si=43eed4e996bd4d6f">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/stranger.webp" alt='Album cover for "The Stranger" by Billy Joel'>
+                            <img class="albumCover" src="/resources/album_covers/stranger.webp" alt='Album cover for "The Stranger" by Billy Joel'>
                             <div class="albumName"><b>The Stranger</b></div>
                             <div class="albumArtist"><em>Billy Joel</em></div>
                             <br>
@@ -313,7 +388,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/2ANVost0y2y52ema1E9xAZ?si=5b4f078feb37452b">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/thriller.webp" alt='Album cover for "Thriller" by Michael Jackson'>
+                            <img class="albumCover" src="/resources/album_covers/thriller.webp" alt='Album cover for "Thriller" by Michael Jackson'>
                             <div class="albumName"><b>Thriller</b></div>
                             <div class="albumArtist"><em>Michael Jackson</em></div>
                             <br>
@@ -322,7 +397,7 @@
 
                     <a class="musicLink" href="https://open.spotify.com/album/7gsWAHLeT0w7es6FofOXk1?si=b52638d289944171">
                         <div class="albumItem">
-                            <img class="albumCover" src="./resources/album_covers/tlop.webp" alt='Album cover for "The Life of Pablo" by Kanye West'>
+                            <img class="albumCover" src="/resources/album_covers/tlop.webp" alt='Album cover for "The Life of Pablo" by Kanye West'>
                             <div class="albumName"><b>The Life of Pablo</b></div>
                             <div class="albumArtist"><em>Kanye West</em></div>
                             <br>
@@ -332,6 +407,45 @@
             </div>
         </div>
 
-        <script src="" async defer></script>
+        <div class="footerCont">
+            <div class="pageContent">
+                <div class="pageSection">
+                    <div style='padding: 1rem;'>
+                        <hr class="rounded" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <footer class="footerSect">
+                <!-- Email | Instagram | Discord | GitHub -->
+
+                <a class="navLink" href="/contact.html">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/envelope.png" alt="Contact mail icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://www.instagram.com/octaviandagreatest/">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/instagram.png" alt="Instagram icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://www.youtube.com/@octaalma">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/youtube.png" alt="YouTube icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://github.com/OctaAlma/">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/github.png" alt="GitHub icon">
+                    </div>
+                </a>
+            </footer>
+            <br>
+        </div>
     </body>
 </html>

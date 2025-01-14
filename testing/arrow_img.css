@@ -1,0 +1,44 @@
+.imgGallery{
+    position: relative;    /* Establish a containing block for the absolute element */
+    display: inline-block; /* To make width fit to the content */
+}
+
+.leftArrow, .rightArrow{
+    /*makes the arrows invisible until hover*/
+    opacity: 0;
+    transition-duration: 0.3s;
+
+    /* this is so that it can overlap the image*/
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    /* allows the arrow to float in the middle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgGallery:hover .leftArrow, .imgGallery:hover .rightArrow{
+    background-color: rgba(0.2, 0.2, 0.2, 0.25);
+    opacity: 1;
+}
+
+.leftArrow:hover, .rightArrow:hover{
+    
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 1;
+}
+
+.leftArrow{
+    /* border-radius: top-left | top-right | bottom-right | bottom-left */
+    left: 0;
+}
+
+.rightArrow{
+    right: 0;
+}

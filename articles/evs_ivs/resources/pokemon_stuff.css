@@ -1,0 +1,200 @@
+:root{
+    --hp-bgcolor: #b8e670;
+    --hp-color: #5dda37; 
+    --atk-bgcolor: #ccc593;
+    --atk-color: #bfab28; 
+    --def-bgcolor: #d99c69;
+    --def-color: #c96821; 
+    --spAtk-bgcolor: #98d7f4;
+    --spAtk-color: #78c2ef; 
+    --spDef-bgcolor: #929fe7;
+    --spDef-color: #5b6cdb;
+    --spd-bgcolor: #c971c7;
+    --spd-color: #b52eaa;  
+
+    --background-color: #211f20;
+    --font-color: #ececec;
+}
+
+.statTable, .tableGeneral{
+    border-collapse: collapse;
+
+    align-self: center;
+    font-family: 'source code pro';
+    
+    width: fit-content;
+
+    border-collapse:separate;
+    border: solid var(--font-color) 1px;
+    border-radius:6px;
+    border-radius: 1rem;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+tbody:last-child{
+    padding: 0.5rem;
+}
+
+.statRow{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.statHeader{
+    background-color: var(--font-color);
+    color: var(--background-color);
+    border-top: none;
+}
+
+.statHeader, .statData, .statLabel{
+    border-left:solid var(--font-color) 1px;
+    border-top:solid var(--font-color) 1px;
+
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.tableItem:first-child, .statHeader:first-child, .statData:first-child, .statLabel {
+    border-left: none;
+}
+
+.statData{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+
+.statLabel{
+    text-align: center;
+}
+
+.statNum{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.statBar{
+    max-width: 50%;
+    min-width: 8rem;
+    height: 1.5rem;
+    z-index: -1;
+}
+
+strong{
+    color:white;
+}
+
+/* General table class... */
+
+.tableHeaderRow{
+    background-color: var(--font-color);
+    color: var(--background-color);
+    text-align: center;
+
+
+}
+
+.tableItem{
+    padding: 0.3rem;
+    vertical-align: middle;
+
+    border-left: solid var(--font-color) 1px;
+    border-top: solid var(--font-color) 1px;
+
+    border-collapse: collapse;
+}
+
+.tableItem span, .tableItem img {
+    vertical-align: middle;
+}
+
+.itemIcon{
+    height: 1.5rem;
+}
+
+/* set the stat colors */
+
+.hpBg{
+    background-color: var(--hp-bgcolor);
+    color: var(--background-color);
+}
+
+.atkBg{
+    background-color: var(--atk-bgcolor);
+    color: var(--background-color);
+}
+
+.defBg{
+    background-color: var(--def-bgcolor);
+    color: var(--background-color);
+}
+
+.spAtkBg{
+    background-color: var(--spAtk-bgcolor);
+    color: var(--background-color);
+}
+
+.spDefBg{
+    background-color: var(--spDef-bgcolor);
+    color: var(--background-color);
+}
+
+.spdBg{
+    background-color: var(--spd-bgcolor);
+    color: var(--background-color)
+}
+
+.hpBar::-webkit-meter-bar{
+    background: var(--hp-bgcolor);
+}
+
+.hpBar::-webkit-meter-optimum-value {
+    background: var(--hp-color);
+}
+
+.atkBar::-webkit-meter-bar{
+    background: var(--atk-bgcolor);
+}
+
+.atkBar::-webkit-meter-optimum-value {
+    background: var(--atk-color);
+}
+
+.defBar::-webkit-meter-bar{
+    background: var(--def-bgcolor);
+}
+
+.defBar::-webkit-meter-optimum-value {
+    background: var(--def-color);
+}
+
+.spAtkBar::-webkit-meter-bar{
+    background: var(--spAtk-bgcolor);
+}
+
+.spAtkBar::-webkit-meter-optimum-value {
+    background: var(--spAtk-color);
+}
+
+.spDefBar::-webkit-meter-bar{
+    background: var(--spDef-bgcolor);
+}
+
+.spDefBar::-webkit-meter-optimum-value {
+    background: var(--spDef-color);
+}
+
+.spdBar::-webkit-meter-bar{
+    background: var(--spd-bgcolor);
+}
+
+.spdBar::-webkit-meter-optimum-value {
+    background: var(--spd-color);
+}

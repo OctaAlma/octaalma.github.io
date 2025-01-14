@@ -7,7 +7,14 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="/style.css">
+
+        <link rel="icon" type="image/x-icon" href="/resources/icons/favicon.png">
+
+        <!-- For Nunito font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
         <!-- For Roboto font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,34 +30,155 @@
         <div class="navbarCont">
             <nav class="navbar">
                 <!-- Name/Home | About Me | Projects | Personal -->
-                <a href="./index.html" class="navLink">
+                <a href="/index.html" class="navLink">
                     <div class="navItem">
-                            <img class="icon" src="./resources/icons/house-chimney.png" alt="Home icon">
+                            <img class="navIcon" src="/resources/icons/house-chimney.png" alt="Home icon">
                             Home
                     </div>
                 </a>
-                <a href="./about.html" class="navLink" id="selected">
+                <a href="/about.html" class="navLink" id="selected">
                     <div class="navItem">
-                            <img class="icon" src="./resources/icons/info.png" alt="Information icon">
+                            <img class="navIcon" src="/resources/icons/info.png" alt="Information icon">
                             About
                     </div>
                 </a>
-                <a href="./projects.html" class="navLink">
+                <a href="/projects.html" class="navLink">
                     <div class="navItem">
-                            <img class="icon" src="./resources/icons/tools.png" alt="Tools icon">
+                            <img class="navIcon" src="/resources/icons/tools.png" alt="Tools icon">
                             Projects
                     </div>
                 </a>
-                <a href="./personal.html" class="navLink">
+                <a href="/personal.html" class="navLink">
                     <div class="navItem">
-                            <img class="icon" src="./resources/icons/user.png" alt="Person icon">
+                            <img class="navIcon" src="/resources/icons/user.png" alt="Person icon">
                             Personal
                     </div>
                 </a>
             </nav>
         </div>
         
+        <div class="pageContent">
+            
+            <div class="pageSection">
+                <div class="sectionDivider">
+                    <div class="leftSection">
+                        <h2 class="sectionName">Childhood</h2>
+                        <hr class="rounded" style="width: 100%;">
+                        <p>
+                            I was born in <a class="txtLink" href="https://en.wikipedia.org/wiki/Laredo,_Texas">Laredo</a>, TX, a border city between the United States and Mexico. 
+                            I spent most of my childhood living in <a class="txtLink" href="https://en.wikipedia.org/wiki/Nuevo_Laredo">Nuevo Laredo</a>, Tamaulipas, which enabled me to grow up with Mexican customs and culture.
+                            My background has shaped many of my personal values, such as the importance of family, my religious beliefs, and character.
+                            <br><br>
+                            My parents wanted me to learn English, so they sent me to a private Catholic school in Laredo, Tx.
+                            During middle school, I transferred over to <a class="txtLink" href="https://hselaredo.harmonytx.org/">Harmony School of Excellence</a>, where I met many of my closest friends (and future girlfriend &#128526;). 
+                            I remained in Harmony until I graduated high school in 2020.
+                        </p>
+                    </div>
+        
+                    <div class="rightSection">
+                        <img class="sectionImg" src="/resources/camera_pics/family.jpg" alt="">
+                    </div>
+                </div>
+            </div>
 
-        <script src="" async defer></script>
+            <div class="pageSection">
+                <div class="invertedSection sectionDivider">
+                    <div class="leftSection">
+                        <img src="/resources/camera_pics/tamu-game.jpg" class="sectionImg" alt="A picture taken by Octavio from the top row of Texas A&M University's Kyle Field.">
+                    </div>
+        
+                    <div class="rightSection">
+                        <h2 class="sectionName">College years</h2>
+                        <hr class="rounded" style="width: 100%;">
+                        <p>
+                            I attended <a class="txtLink" id="tamu" href="https://tamu.edu">Texas A&amp;M University</a> from August 2020 to May 2024, where I studied and received my Bachelors of Science in Computer Science and a minor in Cybersecurity.
+                            My time at TAMU proved to be a very challenging but rewarding journey.
+                            I got to meet some of the most kind, passionate, and intelligent people that I've ever crossed paths with, experienced the great <em>"spirit of Aggieland"</em> first-hand, and had the chance to learn a variety of subjects from a cohort of excellent professors.
+                            <br><br>
+                            I had the opportunity to get exposed take various courses covering many fields within the discipline. 
+                            The courses that I enjoyed the most were definitely:
+                        </p>
+                        <ul class="bulletList">
+                            <li class="bulletItem">CSCE 411: The Design and Analysis of Algorithms</li>
+                            <li class="bulletItem">CSCE 441: Computer Graphics</li>
+                            <li class="bulletItem">CSCE 450: Computer Animation</li>
+                            <li class="bulletItem">CSCE 430: Problem Solving Programming Strategies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pageSection">
+                <div class="sectionDivider">
+                    <div class="leftSection">
+                        <h2 class="sectionName">Currently</h2>
+                        <hr class="rounded" style="width: 100%;">
+                        <p>
+                            Although I did well academically, I had a lot of trouble landing an internship during my years in college. 
+                            The fact that the software engineering bubble popped around the time I was completing my education certainly didn't help 😒.
+                            <br><br>
+                            However, I had the opportunity to take part in the <a class="txtLink" href="https://www.energy.gov/nnsa/national-nuclear-security-administration">National Nuclear Security Administration</a> Minority Serving Institutions Internship Program (a.k.a. the <a class="txtLink" href="https://orise.orau.gov/nnsa-msiip/">NNSA MSIIP</a>).
+                            This internship enables students from federally-designated minority serving institutions to enter positions within <a class="txtLink" href="https://www.energy.gov/">Department of Energy (DOE)</a> sites across the country. 
+                            <br><br>
+                            I had the opportunity to intern at the <a class="txtLink" href="https://pantex.energy.gov/about">Pantex Plant</a>'s cybersecurity authorizations department, where I was able to learn about the NNSA's organizational structure, meet many incredibly dedicated people, do <strong>a lot</strong> of reading about federal and organizational cybersecurity policies, and work on a risk assessment project.
+                            Around the end of my internship, I was offered my current job: a full-time position as an information system security officer.
+                        </p>
+                    </div>
+        
+                    <div class="rightSection">
+                        <img class="sectionImg" src="/resources/camera_pics/washington_selfie.jpg" alt="A picture of Octavio in front of the Washington Monument in D.C.">
+                    </div>  
+                </div>  
+            </div>
+
+            <div class="pageSection">
+                <div class="sectionDivider">
+                    <div class="section">
+                        I continue to be grateful for the family, friends, and mentors that have helped me succeed throughout my life.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerCont">
+            <div class="pageContent">
+                <div class="pageSection">
+                    <div style='padding: 1rem;'>
+                        <hr class="rounded" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <footer class="footerSect">
+                <!-- Email | Instagram | Discord | GitHub -->
+
+                <a class="navLink" href="/contact.html">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/envelope.png" alt="Contact mail icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://www.instagram.com/octaviandagreatest/">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/instagram.png" alt="Instagram icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://www.youtube.com/@octaalma">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/youtube.png" alt="YouTube icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://github.com/OctaAlma/">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/github.png" alt="GitHub icon">
+                    </div>
+                </a>
+            </footer>
+            <br>
+        </div>   
     </body>
 </html>

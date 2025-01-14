@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+
+        <link rel="icon" type="image/x-icon" href="/resources/icons/favicon.png">
+
+        <!-- For Nunito font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+        <!-- For Roboto font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- for the source code pro font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbarCont">
+            <nav class="navbar">
+                <!-- Name/Home | About Me | Projects | Personal -->
+                <a href="/index.html" class="navLink">
+                    <div class="navItem">
+                            <img class="navIcon" src="/resources/icons/house-chimney.png" alt="Home i">
+                            Home
+                    </div>
+                </a>
+                <a href="/about.html" class="navLink">
+                    <div class="navItem">
+                            <img class="navIcon" src="/resources/icons/info.png" alt="Home i">
+                            About
+                    </div>
+                </a>
+                <a href="/projects.html" class="navLink">
+                    <div class="navItem">
+                            <img class="navIcon" src="/resources/icons/tools.png" alt="Home i">
+                            Projects
+                    </div>
+                </a>
+                <a href="/personal.html" class="navLink">
+                    <div class="navItem">
+                            <img class="navIcon" src="/resources/icons/user.png" alt="Home i">
+                            Personal
+                    </div>
+                </a>
+            </nav>
+        </div>
+
+        <!-- 
+        Some ideas for content:
+
+        Quag's vacation pics/instagram
+
+        gameboy advance project
+
+        experience in tamu
+
+        -->
+
+        <div class="pageContent">
+            
+            <div class="pageSection">
+                <div class="sectionDivider">
+                    <div class="smallSection">
+
+                        <h2 class="sectionName">Contact form</h2>
+                        <hr class="rounded" style="width: 100%;">
+
+                        <div class="contentSpacer">
+                            <form action="https://formspree.io/f/mbllwoje" method="POST" class="contactForm">
+
+                                <div id="formShortTextInput">
+                                    <label class="formEntry">
+                                        <strong>First name:</strong>
+                                        <input class="shortTextInput" type="text" name="firstName" placeholder="Luis">
+                                    </label>
+                                    <br>
+
+                                    <label class="formEntry">
+                                        <strong>Last name:</strong>
+                                        <input class="shortTextInput" type="text" name="lastName" placeholder="Miguel">
+                                    </label>
+                                    <br>
+
+                                    <label class="formEntry">
+                                        <strong>Email:</strong>
+                                        <input class="shortTextInput" type="email" placeholder="sol.de.mexico@gmail.com" name="email">
+                                    </label>
+                                    <br>
+                                </div>
+
+                                <label>
+                                    <textarea class="userMessage" name="message" placeholder="Enter your message here!"></textarea>
+                                </label> 
+                                <br>
+
+                                <button class="submitButton" type="submit">
+                                    <img class = "submitIcon" src="/resources/icons/paper-plane.png" alt="Paper airplane icon, representing the submit button">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerCont">
+            <div class="pageContent">
+                <div class="pageSection">
+                    <div style='padding: 1rem;'>
+                        <hr class="rounded" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <footer class="footerSect">
+                <!-- Email | Instagram | Discord | GitHub -->
+
+                <a class="navLink" href="/contact.html">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/envelope.png" alt="Contact mail icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://www.instagram.com/octaviandagreatest/">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/instagram.png" alt="Instagram icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://www.youtube.com/@octaalma">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/youtube.png" alt="YouTube icon">
+                        
+                    </div>
+                </a>
+
+                <a class="navLink" href="https://github.com/OctaAlma/">
+                    <div class="navItem">
+                        <img class="footerIcon" src="./resources/icons/github.png" alt="GitHub icon">
+                    </div>
+                </a>
+            </footer>
+            <br>
+        </div>
+    </body>
+</html>
