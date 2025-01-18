@@ -25,11 +25,14 @@ Icons obtained from: https://www.flaticon.com/icon-fonts-most-downloaded
     --accent-color: #2094FA;
     --background-color: #211f20;
     --font-color: #ececec;
+    --light-font-color: #acacac;
     --nav-color: #2a2a2a;
     --nav-hover-color: #333333;
     --link-color: #7d7aff;
     --tamu-color: #500000;
     --green-color: #24a833;
+
+    --blog-color: #c96821; 
 }
 
 /* html, body {width: auto!important; overflow-x: hidden!important}  */
@@ -318,7 +321,8 @@ hr.rounded {
     display: inline-block;
 }
 
-.sectionImg{
+.sectionImg, .imgWithCaption{
+
     align-self: center;
 
     max-width: 80%;
@@ -330,7 +334,30 @@ hr.rounded {
     border-radius: 0.5rem;
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sectionImg{
     margin: 1.5rem;
+}
+
+.imgWithCaption{
+    margin: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.imgCaption{
+    text-align: center;
+    align-self: center;
+
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    width: fit-content;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--light-font-color);
 }
 
 
@@ -506,33 +533,44 @@ hr.rounded {
     right: 0;
 }
 
-/* article stuff */
+/* article and blog stuff */
 
-.articleLink{
+.articleLink, .blogLink{
     text-align: center;
 }
 
-.articleTitle{
-
+.articleTitle, .blogTitle{
     text-decoration: underline;
     text-underline-offset: 0.3rem;
-
-
     text-transform: capitalize;
     font-weight: bold;
-    color: var(--link-color);
 
     padding: 0.4rem;
     border-radius: 0.3rem;
     transition-duration: 0.3s;
+}
 
+.blogTitle, .blogHeader{
+    color: var(--blog-color);
+}
+
+.articleTitle, .articleHeader{
+    color: var(--link-color);
+}
+
+.articleTitle:hover, .blogTitle:hover{
+    transform: translate(0, -0.25rem);
+    text-underline-offset: 0.5rem;
 }
 
 .articleTitle:hover{
     background-color: var(--link-color);
     color: var(--font-color);
-    transform: translate(0, -0.25rem);
-    text-underline-offset: 0.5rem;
+}
+
+.blogTitle:hover{
+    background-color: var(--blog-color);
+    color: var(--font-color);
 }
 
 .contentSpacer{

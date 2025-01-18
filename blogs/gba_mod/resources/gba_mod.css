@@ -1,0 +1,64 @@
+:root{
+    --std-font: 'roboto';
+    --navbar-font: 'nunito';
+    --code-font: 'source code pro';
+
+    --table-color: #2B2B2B;
+    --header-color: #333333;
+}
+
+.generalTable{
+    max-width: 40rem;
+
+    margin: 1.5rem;
+
+    font-family: var(--std-font);
+
+    width: fit-content;
+    align-self: center;
+
+    background-color: var(--table-color);
+}
+
+.generalTable thead, .generalTable tfoot{
+    background-color: var(--header-color);
+}
+
+.generalTable thead tr th, .generalTable tfoot tr th{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    vertical-align: middle;
+}
+
+.generalTable tbody tr td{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    vertical-align: middle;
+}
+
+.generalTable tbody tr td, .generalTable thead tr th, .generalTable{
+    border: 0.2rem solid var(--header-color);
+    border-collapse: collapse;
+}
+
+.txtCode{
+    font-family: var(--code-font);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.centered{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
